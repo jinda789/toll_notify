@@ -1,4 +1,4 @@
-tollfree_call:
+toll_notify:
   description: Send a message to voice
   fields:
     message:
