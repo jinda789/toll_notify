@@ -1,0 +1,6 @@
+tollfree_call:
+  description: Send a message to void
+  fields:
+    message:
+      description: ข้อความที่ต้องการให้โทรออก
+      example: 'ทดสอบฮัลโหลภาษาไทย'
