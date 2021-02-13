@@ -1,5 +1,5 @@
 tollfree_call:
-  description: Send a message to void
+  description: Send a message to voice
   fields:
     message:
       description: ข้อความที่ต้องการให้โทรออก
