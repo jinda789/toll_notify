@@ -1,4 +1,6 @@
 {
     "name": "Tollfree Homeassistant.Systems",
+    "country": "TH",
+    "domains": ["notify"],
     "render_readme": true
 }

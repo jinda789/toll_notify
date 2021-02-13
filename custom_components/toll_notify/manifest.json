@@ -1,0 +1,7 @@
+{
+    "domain": "toll_notify",
+    "name": "Tollfree Notify",
+    "documentation": "https://github.com/jinda789/toll_notify",
+    "requirements": [],
+    "codeowners": ["@pongdevelop"]
+  }
