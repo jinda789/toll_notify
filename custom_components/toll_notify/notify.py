@@ -2,7 +2,7 @@
 Custom component for Home Assistant to enable sending messages via tollfree notify API.
 Example configuration.yaml entry:
 notify:
-  - name: toll_alert
+  - name: tollfree_call
     platform: toll_notify
     access_token: 'tag key'    
     
