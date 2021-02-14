@@ -1,18 +1,19 @@
-tollfree_call:
-  description: Send a message to voice
-  fields:
-    message:
-      description: ข้อความที่ต้องการให้โทรออก
-      example: 'ทดสอบฮัลโหลภาษาไทย'
-toll_notify:
-  description: Send a message to voice
-  fields:
-    message:
-      description: ข้อความที่ต้องการให้โทรออก
-      example: 'ทดสอบฮัลโหลภาษาไทย'
 notify:
-  description: Send a message to voice
-  fields:
-    message:
-      description: ข้อความที่ต้องการให้โทรออก
-      example: 'ทดสอบฮัลโหลภาษาไทย'
+  tollfree_call:
+    description: Send a message to voice
+    fields:
+      message:
+        description: ข้อความที่ต้องการให้โทรออก
+        example: 'ทดสอบฮัลโหลภาษาไทย'
+  toll_notify:
+    description: Send a message to voice
+    fields:
+      message:
+        description: ข้อความที่ต้องการให้โทรออก
+        example: 'ทดสอบฮัลโหลภาษาไทย'
+  notify:
+    description: Send a message to voice
+    fields:
+      message:
+        description: ข้อความที่ต้องการให้โทรออก
+        example: 'ทดสอบฮัลโหลภาษาไทย'
