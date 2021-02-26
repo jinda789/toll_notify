@@ -12,6 +12,7 @@ With this custom component loaded, you can send messaged to tollfree notify.
 import requests
 import logging
 import voluptuous as vol
+import json
  
 from aiohttp.hdrs import AUTHORIZATION
 import homeassistant.helpers.config_validation as cv
@@ -49,6 +50,6 @@ class LineNotificationService(BaseNotificationService):
        
         r=requests.Session().post(BASE_URL, headers=headers, files=None, data=payload)
         if r.status_code  != 200:
-            _LOGGER.error(r.content)
+            _LOGGER.error(json.dumps(r.content))
 
-        _LOGGER.debug(r.content)
+        _LOGGER.debug(json.dumps(r.content))
