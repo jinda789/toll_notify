@@ -48,8 +48,6 @@ class LineNotificationService(BaseNotificationService):
                     'message':message , 'tagkey':self.access_token
                 }) 
        
-        r=requests.Session().post(BASE_URL, headers=headers, files=None, data=payload)
+        r=requests.Session().post(BASE_URL_LINE, headers=headers, files=file, data=payload)
         if r.status_code  != 200:
             _LOGGER.error(r.text)
-
-        _LOGGER.debug(r.content)
