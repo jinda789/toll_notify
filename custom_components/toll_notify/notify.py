@@ -31,9 +31,9 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
 def get_service(hass, config, discovery_info=None):
     """Get the tollfree notification service."""
     access_token = config.get(CONF_ACCESS_TOKEN )
-    return LineNotificationService(access_token)
+    return TollFreeNotificationService(access_token)
                                            
-class LineNotificationService(BaseNotificationService):
+class TollFreeNotificationService(BaseNotificationService):
     """Implementation of a notification service for the tollfree Messaging service."""
 
     def __init__(self, access_token):
