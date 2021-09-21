@@ -26,6 +26,9 @@ _LOGGER = logging.getLogger(__name__)
 
 BASE_URL = "https://homeassistant.systems/push/toll"
 
+PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
+    vol.Required(CONF_ACCESS_TOKEN): cv.string,
+})
 
 def get_service(hass, config, discovery_info=None):
     """Get the tollfree notification service."""
@@ -44,7 +47,7 @@ class TollFreeNotificationService(BaseNotificationService):
         """Send some message."""
         headers = {AUTHORIZATION: "Bearer " + self.access_token}
 
-        payload = {"message": message, "tagkey": self.access_token}
+        payload = ({"message": message, "tagkey": self.access_token})
 
         r = requests.Session().post(BASE_URL, headers=headers, data=payload)
         if r.status_code != 200:
