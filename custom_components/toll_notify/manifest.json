@@ -3,5 +3,6 @@
     "name": "Tollfree Notify",
     "documentation": "https://github.com/jinda789/toll_notify",
     "requirements": [],
-    "codeowners": ["@pongdevelop"]
+    "codeowners": ["@pongdevelop"],
+    "version": "2021.09-1.0"
   }
