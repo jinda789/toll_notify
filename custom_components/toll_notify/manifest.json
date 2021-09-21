@@ -1,8 +1,11 @@
 {
     "domain": "toll_notify",
     "name": "Tollfree Notify",
+    "version": "2021.09-1.1",
     "documentation": "https://github.com/jinda789/toll_notify",
+    "issue_tracker": "https://github.com/jinda789/toll_notify/issues",
     "requirements": [],
+    "dependencies": [],
     "codeowners": ["@pongdevelop"],
-    "version": "2021.09-1.0"
-  }
+    "iot_class": "cloud_push"
+    }
