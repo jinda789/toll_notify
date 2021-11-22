@@ -24,7 +24,7 @@ from homeassistant.components.notify import (
 
 _LOGGER = logging.getLogger(__name__)
 
-BASE_URL = "https://homeassistant.systems/push/toll"
+BASE_URL = "https://manage.homeassistant.systems/api/toll"
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     vol.Required(CONF_ACCESS_TOKEN): cv.string,
