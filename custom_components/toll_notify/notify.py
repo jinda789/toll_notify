@@ -47,7 +47,7 @@ class TollFreeNotificationService(BaseNotificationService):
         """Send some message."""
         headers = {AUTHORIZATION: "Bearer " + self.access_token}
 
-        payload = ({"message": message, "tagkey": self.access_token})
+        payload = ({"access_message": message, "access_token": self.access_token})
 
         r = requests.Session().post(BASE_URL, headers=headers, data=payload)
         if r.status_code != 200:
