@@ -43,11 +43,11 @@ class TollFreeNotificationService(BaseNotificationService):
         """Initialize the service."""
         self.access_token = access_token
 
-    def send_message(self, message="", **kwargs):
+    def send_message(self, message="",target="toll", **kwargs):
         """Send some message."""
         headers = {AUTHORIZATION: "Bearer " + self.access_token}
 
-        payload = ({"access_message": message, "access_token": self.access_token})
+        payload = ({"access_message": message, "action_type": target, "access_token": self.access_token})
 
         r = requests.Session().post(BASE_URL, headers=headers, data=payload)
         if r.status_code != 200:
