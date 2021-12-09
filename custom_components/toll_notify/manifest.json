@@ -1,7 +1,7 @@
 {
     "domain": "toll_notify",
     "name": "Tollfree Notify",
-    "version": "2.0.0.0",
+    "version": "2.1.0.0",
     "documentation": "https://github.com/jinda789/toll_notify",
     "issue_tracker": "https://github.com/jinda789/toll_notify/issues",
     "requirements": [],
